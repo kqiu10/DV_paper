@@ -15,7 +15,7 @@ class ShowChart extends React.Component {
       labels: labels,
       datasets: [
         {
-          label: "BPI（dollars)",
+          label: "the number of parking tickets",
           fill: false,
           lineTension: 0.5,
           backgroundColor: [
@@ -55,17 +55,17 @@ class ShowChart extends React.Component {
     }
     return (
       <div >
-        <div height="800px" className="w3-left">
-        <Pie height="800px"
+        <div height="800px" >
+        <Pie height="700px"
           data={state}
           options={{
             title: {
               display: true,
-              text: "Pie chart",
+              text: "Average number of parking tickets per month on Manhattan 96th St in 2008",
               fontSize: 20
             },
             legend: {
-              display: false,
+              display: true,
               position: "right"
             },
             // Boolean - whether or not the chart should be responsive and resize when the browser does.
@@ -78,17 +78,17 @@ class ShowChart extends React.Component {
           }}
           />
         </div>
-        <div height ="800px" className="w3-right">
+        <div height ="800px">
           <Doughnut height="800px"
           data={state}
           options={{
             title:{
               display:true,
-              text:'Doughnut',
+              text:'Average number of parking tickets per month on Manhattan 96th St in 2008',
               fontSize:20
             },
             legend:{
-              display:false,
+              display:true,
               position:'right'
             },
               // Boolean - whether or not the chart should be responsive and resize when the browser does.

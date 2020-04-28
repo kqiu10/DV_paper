@@ -29,7 +29,7 @@ class ShowChart extends React.Component {
     }
     return (
       <div >
-        <Line height="700px"
+        <Line height="700rem"
           data={state}
           options={{
             title: {

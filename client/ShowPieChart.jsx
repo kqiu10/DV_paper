@@ -55,8 +55,8 @@ class ShowChart extends React.Component {
     }
     return (
       <div >
-        <div height="800px" >
-        <Pie height="700px"
+        <div height="700rem" >
+        <Pie height="700rem"
           data={state}
           options={{
             title: {
@@ -78,8 +78,8 @@ class ShowChart extends React.Component {
           }}
           />
         </div>
-        <div height ="800px">
-          <Doughnut height="800px"
+        <div height ="700rem">
+          <Doughnut height="700rem"
           data={state}
           options={{
             title:{
